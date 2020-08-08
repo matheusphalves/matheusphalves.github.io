@@ -15,8 +15,6 @@
 
     <!--ESTILOS CSS PARA ALGUNS ELEMENTOS-->
     <link rel="stylesheet" href="css/estilos.css">
-
-
   </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -66,19 +64,27 @@
                                 <div class="rounded border-primary my-3">
                                         <div id ="about" class="card-body">
                                                 <div class="row justify-content-left my-2">
-                                                        <span class="border border-primary  rounded"><h2 class="text-primary font-weight-bold mx-2 my-2">About me</h2></span>
+                                                        <span ><h2 class="text-primary font-weight-bold mx-2 my-2">About me</h2></span>
                                                   </div>
-                                             
-                                            <p class="text-dark">
-                                                I am passionate about technology, mathematics and enthusiastic about knowledge acquisition.
-                                                <br>   
-                                                Currently, I'm graduating in computer engineering at Universidade de Pernambuco. 
-                                            </p>                                       
+
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <img src="https://avatars2.githubusercontent.com/u/33577238?s=400&u=a22e44cfc4f11ec9b72da835da723295dc8a8dd9&v=4" height="300px" width="300px">
+                                                </div>
+
+                                                <div class="col-sm-8">
+                                                    <p class="text-dark">
+                                                        I am passionate about technology, mathematics and enthusiastic about knowledge acquisition.
+                                                        Currently, I'm graduating in computer engineering at Universidade de Pernambuco. 
+                                                    </p>        
+                                                </div>
+                                            </div>
+   
                                         </div>
 
                                         <div id="projects" class="card-body">
                                             <div class="row justify-content-left my-2">
-                                                <span class="border border-primary  rounded">
+                                                <span>
                                                     <h2 class="text-primary font-weight-bold mx-2 my-2">Projects</h2></span>
                                           </div>
                                           <p class="text-dark">Bellow, you will see my projects. For each, there is a GitHub Repository. Try open it if you guess interesting.</p>
@@ -99,7 +105,7 @@
 
                                         <div id="contact" class="card-body">
                                             <div class="row justify-content-left my-2">
-                                                <span class="border border-primary  rounded">
+                                                <span>
                                                     <h2 class="text-primary font-weight-bold mx-2 my-2">Contact</h2></span>
                                           </div>
                                           <p class="text-dark">Send me an email or contact me in social medias: 
@@ -111,29 +117,47 @@
                                             <a class="icone" href="https://www.instagram.com/matheusphalves/" target="_blank">
                                                 <img src="images/igLogo.png" width="20" height="20" alt="instagram">
                                             </a>
-
                                           </p>
                                             
-                                          <div>
-                                            <form>
-                                                <div class="form-group">
-                                                  <label for="exampleFormControlInput1">Email address</label>
-                                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                                </div>
-                                                <div class="form-group">
-                                                  <label for="exampleFormControlTextarea1">Example textarea</label>
-                                                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Text your message" rows="3"></textarea>
-                                                </div>
-                                              </form>
 
-                                              <button type="submit" class="btn btn-primary">Send</button>
+                                          <form action="https://formspree.io/xgenqevp" method="POST">
+                                            <div class="row">
 
-                                          </div>
+
+                                                <div class="col-sm-5">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Your name:</label>
+                                                        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="My name">
+                                                      </div>
+                                                </div>
+
+                                                <div class="col-sm-5">
+                                                    <div class="form-group">
+                                                        <label for="exampleFormControlInput1">Your email address:</label>
+                                                        <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-sm-5">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Message</label>
+                                                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Text your message" rows="3"></textarea>
+                                                  </div>
+                                            </div>
+                                            <button type="submit" value="Send" class="btn btn-primary">Send</button>
+                                          </form>
+                                      </div>
+
                         
                             </div>
                         </div>
                       </div>                    
                   </section>    
+
+
+
+
+
 
     <!--AQUI FICA O RODAPÉ DO SITE-->
     <footer id="footer" class="footer navbar-fixed-bottom bg-gradient-light">
