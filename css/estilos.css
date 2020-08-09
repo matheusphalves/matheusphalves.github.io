@@ -5,6 +5,10 @@ body{
 }
 
 
+html {
+    scroll-behavior: smooth;
+  }
+
 #topo{
     border: 0.5px solid;
     border-color: rgb(117, 117, 117);
