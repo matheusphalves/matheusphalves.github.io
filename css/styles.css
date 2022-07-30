@@ -632,6 +632,7 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  background: #232d3b;
 }
 
 @media (min-width: 576px) {
@@ -11283,7 +11284,7 @@ textarea.form-control-lg {
 }
 body {
   padding-top: 3.375rem;
-  color: #6c757d;
+  color: #ffff;
 }
 
 @media (min-width: 992px) {
@@ -11304,6 +11305,7 @@ h5,
 h6,
 .h6 {
   text-transform: uppercase;
+  color: #ffff;
 }
 
 h1, .h1 {
